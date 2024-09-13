@@ -34,6 +34,10 @@ function displayTemp(response) {
 
   let temperature = Math.round(response.data.temperature.current);
   temperatureCurrent.innerHTML = `${temperature}`;
+
+  let weatherIcon = document.querySelector(".weather-emoji");
+  let currentIcon = response.data.condition.icon_url;
+  weatherIcon.innerHTML = `<img src="${currentIcon}" alt="Weather Icon" />`;
 }
 let submitSearch = document.querySelector(".search-button");
 submitSearch.addEventListener("click", Searching);
