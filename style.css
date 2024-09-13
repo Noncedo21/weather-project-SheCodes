@@ -15,18 +15,21 @@
 .search-button:hover {
   background-color: #51dacf;
 }
-.container{
+.container {
   background-color: #25aee2;
   align-items: center;
-  width: 60%;
+  width: 40%;
   background-color: #92def8;
   margin: 50px auto;
   padding: 50px;
   border-radius: 20px;
 }
+main {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 body {
-  
   font-family: "Inria Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -35,8 +38,6 @@ header {
   font-family: "Inria Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  
-  
 }
 
 footer {
@@ -46,4 +47,39 @@ footer {
   font-weight: 400;
   font-style: normal;
   background-color: #92def8;
+}
+.temperature {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  right: 200px;
+  top: -120px;
+  font-size: 60px;
+}
+.celsius {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  right: 170px;
+  bottom: 180px;
+}
+.daytime {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  bottom: 150px;
+}
+.umoya {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  bottom: 160px;
+}
+.weather-emoji {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  right: 280px;
+  bottom: 40px;
 }
