@@ -96,7 +96,12 @@ a {
 }
 .hum-perc {
   color: #e3f6f5;
+  margin-left: 10px;
 }
 .wind-speed {
   color: #e3f6f5;
+  margin-left: 10px;
+}
+.day {
+  margin-right: 10px;
 }
