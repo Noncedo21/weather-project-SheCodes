@@ -15,3 +15,20 @@
 .search-button:hover {
   background-color: #51dacf;
 }
+body {
+  background-color: lightblue;
+}
+
+.city {
+  color: darkblue;
+  font-size: 2em;
+}
+
+.weather-emoji {
+  font-size: 3rem;
+}
+
+.temperature {
+  color: red;
+  font-size: 2rem;
+}
