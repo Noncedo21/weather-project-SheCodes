@@ -16,19 +16,25 @@
   background-color: #51dacf;
 }
 body {
-  background-color: lightblue;
+  background-color: #25aee2;
+  align-items: center;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
-.city {
-  color: darkblue;
-  font-size: 2em;
+header {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
-.weather-emoji {
-  font-size: 3rem;
+main {
+  width: 80%;
+  background-color: #92def8;
+  margin: 50px auto;
+  padding: 50px;
+  border-radius: 20px;
 }
-
-.temperature {
-  color: red;
-  font-size: 2rem;
+footer {
+  text-align: center;
+  color: white;
 }
