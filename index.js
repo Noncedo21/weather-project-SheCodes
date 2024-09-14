@@ -38,6 +38,18 @@ function displayTemp(response) {
   let weatherIcon = document.querySelector(".weather-emoji");
   let currentIcon = response.data.condition.icon_url;
   weatherIcon.innerHTML = `<img src="${currentIcon}" alt="Weather Icon" />`;
+
+  let humidityNow = document.querySelector(".hum-perc");
+  let currentHumidity = response.data.temperature.humidity;
+  humidityNow.innerHTML = `${currentHumidity}%`;
+
+  let windSpeed = document.querySelector(".wind-speed");
+  let currentSpeed = response.data.wind.speed;
+  windSpeed.innerHTML = `${currentSpeed}km/h`;
+
+  let skyCondition = document.querySelector(".weather-descrip");
+  let currentCondition = response.data.condition.description;
+  skyCondition.innerHTML = `${currentCondition}`;
 }
 let submitSearch = document.querySelector(".search-button");
 submitSearch.addEventListener("click", Searching);
