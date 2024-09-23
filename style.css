@@ -112,3 +112,10 @@ a {
 body {
   background: #cefff1;
 }
+.weather-forecast {
+  padding: -100px;
+  display: flex;
+  justify-content: center;
+  text-align: centre;
+  top: 200px;
+}
