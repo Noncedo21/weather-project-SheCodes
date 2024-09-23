@@ -112,7 +112,28 @@ a {
 body {
   background: #cefff1;
 }
-.weather-forecast {
+.weather-today {
+  padding: -100px;
+  display: flex;
+  justify-content: center;
+  text-align: centre;
+  top: 200px;
+}
+.min-temp {
+  padding: -100px;
+  display: flex;
+  justify-content: center;
+  text-align: centre;
+  top: 200px;
+}
+.max-temp {
+  padding: -100px;
+  display: flex;
+  justify-content: center;
+  text-align: centre;
+  top: 200px;
+}
+.weather-icon {
   padding: -100px;
   display: flex;
   justify-content: center;
