@@ -16,7 +16,7 @@
   background-color: #51dacf;
 }
 .container {
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   align-items: center;
   width: 40%;
 
@@ -46,7 +46,7 @@ footer {
   font-family: "Inria Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #92def8;
+  background-color: #cefff1;
 }
 .temperature {
   position: relative;
@@ -84,6 +84,7 @@ footer {
   justify-content: right;
   right: 230px;
   bottom: 40px;
+  color: black;
 }
 a {
   color: fuchsia;
