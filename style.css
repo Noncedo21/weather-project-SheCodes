@@ -23,8 +23,8 @@
   align-items: center;
   width: 40%;
 
-  margin: 0 auto;
-  padding: 30px;
+  margin: 20 auto;
+  padding: 10px;
   border-radius: 20px;
 }
 main {
@@ -32,13 +32,15 @@ main {
   font-weight: 400;
   font-style: normal;
   margin: 0;
+  padding: 0;
 }
 body {
   font-family: "Inria Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #384b70;
-  margin: -50px;
+  margin: 0;
+  padding: 0;
 }
 header {
   font-family: "Inria Sans", sans-serif;
