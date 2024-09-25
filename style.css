@@ -129,8 +129,8 @@ body {
   display: flex;
   justify-content: center;
   text-align: centre;
-  top: 220px;
-  left: 200px;
+  top: 280px;
+  left: 250px;
   font-size: 25px;
 }
 .max-temp {
