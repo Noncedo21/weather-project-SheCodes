@@ -121,33 +121,31 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  top: 300px;
+  margin-bottom: 20px; /* Adjust spacing as needed */
   font-size: 38px;
 }
+
 .min-temp {
-  padding: -100px;
   display: flex;
   justify-content: center;
   text-align: center;
-  top: 280px;
-  left: 250px;
+  margin-bottom: 10px; /* Adjust spacing as needed */
   font-size: 25px;
 }
+
 .max-temp {
-  padding: -100px;
   display: flex;
   justify-content: center;
   text-align: center;
-  top: 200px;
+  margin-bottom: 10px; /* Adjust spacing as needed */
   font-size: 25px;
   font-weight: bolder;
 }
+
 .weather-icon {
-  padding: -100px;
   display: flex;
   justify-content: center;
   text-align: center;
-  top: 200px;
+  margin-bottom: 15px; /* Adjust spacing as needed */
   font-size: 88px;
-  font-weight: 30px;
 }
