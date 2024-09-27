@@ -7,6 +7,7 @@
   color: #384b70;
   border: #51dacf;
 }
+
 .search-button {
   color: white;
   background-color: #8bd7d1;
@@ -15,143 +16,96 @@
   padding: 20px 30px;
   border-color: aqua;
 }
+
 .search-button:hover {
   background-color: #51dacf;
 }
+
 .container {
   background-color: #f5f5f5;
-  align-items: center;
   max-width: 600px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(70, 142, 152, 0.08);
   border-radius: 16px;
   padding: 20px;
 }
+
 main {
   font-family: "Inria Sans", sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
+
 body {
   font-family: "Inria Sans", sans-serif;
   font-weight: 400;
-  font-style: normal;
   color: #384b70;
-}
-header {
-  font-family: "Inria Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  background: #cefff1;
 }
 
 footer {
   text-align: center;
   color: #384b70;
-  font-family: "Inria Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   margin-top: 20px;
   background-color: #f5f5f5;
 }
+
 .temperature {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  right: 100px;
-  top: -150px;
   font-size: 100px;
+  margin-top: -50px;
+  text-align: right;
 }
+
 .celsius {
-  position: relative;
-  display: flex;
-  justify-content: right;
-  right: 70px;
-  bottom: 250px;
+  font-size: 40px;
+  text-align: right;
+  margin-top: -80px;
 }
-.daytime {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  bottom: 230px;
-  font-weight: lighter;
-}
+
+.daytime,
 .umoya {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  bottom: 230px;
-  font-weight: lighter;
+  margin: 20px 0;
 }
+
 .weather-emoji {
-  position: relative;
-  display: flex;
-  justify-content: right;
-  right: 230px;
-  bottom: 40px;
-  color: black;
+  text-align: right;
 }
-a {
-  color: fuchsia;
-}
+
 .city {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  bottom: -30px;
+  margin-bottom: 20px;
 }
+
 .hum-perc {
   color: #51dacf;
   margin-left: 10px;
 }
+
 .wind-speed {
   color: #51dacf;
   margin-left: 10px;
-  padding-bottom: -100px;
 }
+
 .day {
   margin-right: 10px;
 }
+
 .time {
   margin-right: 10px;
 }
-body {
-  background: #cefff1;
-}
-.weather-today {
+
+.weather-forecast {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
-  margin-top: -20pxt; /* Adjust spacing as needed */
-  font-size: 38px;
-  top: 200px;
+  margin-top: 20px;
 }
 
-.min-temp {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 10px; /* Adjust spacing as needed */
-  font-size: 25px;
-}
-
-.max-temp {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 10px; /* Adjust spacing as needed */
-  font-size: 25px;
-  font-weight: bolder;
+.weather-today,
+.max-temp,
+.min-temp,
+.weather-icon {
+  margin: 0;
 }
 
 .weather-icon {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 15px; /* Adjust spacing as needed */
   font-size: 88px;
-}
-.weather-forecast {
-  margin: 0;
-  padding: 0;
 }
