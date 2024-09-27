@@ -31,7 +31,6 @@ main {
   font-family: "Inria Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding: 30px auto;
 }
 body {
   font-family: "Inria Sans", sans-serif;
@@ -123,6 +122,7 @@ body {
   text-align: center;
   margin-bottom: 20px; /* Adjust spacing as needed */
   font-size: 38px;
+  top: 200px;
 }
 
 .min-temp {
