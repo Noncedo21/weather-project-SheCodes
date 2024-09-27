@@ -33,6 +33,7 @@
 main {
   font-family: "Inria Sans", sans-serif;
   font-weight: 400;
+  text-align: center;
 }
 
 body {
@@ -51,27 +52,26 @@ footer {
 
 .temperature {
   font-size: 100px;
-  margin-top: -50px;
-  text-align: right;
+  margin: 0;
 }
 
 .celsius {
   font-size: 40px;
-  text-align: right;
-  margin-top: -80px;
+  margin-top: -40px;
 }
 
 .daytime,
 .umoya {
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .weather-emoji {
-  text-align: right;
+  margin-bottom: 10px;
 }
 
 .city {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .hum-perc {
@@ -84,28 +84,27 @@ footer {
   margin-left: 10px;
 }
 
-.day {
-  margin-right: 10px;
-}
-
-.time {
-  margin-right: 10px;
-}
-
 .weather-forecast {
   display: flex;
   justify-content: space-between;
-  text-align: center;
   margin-top: 20px;
+  padding: 0;
 }
 
-.weather-today,
-.max-temp,
-.min-temp,
-.weather-icon {
-  margin: 0;
+.weather-today {
+  font-size: 38px;
+  text-align: center;
 }
 
 .weather-icon {
   font-size: 88px;
+  text-align: center;
+}
+
+.max-temp,
+.min-temp {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
 }
