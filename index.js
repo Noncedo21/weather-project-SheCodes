@@ -51,8 +51,6 @@ function displayTemp(response) {
   let currentCondition = response.data.condition.description;
   skyCondition.innerHTML = `${currentCondition}`;
 }
-let submitSearch = document.querySelector(".search-button");
-submitSearch.addEventListener("click", Searching);
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
@@ -74,10 +72,14 @@ function displayForecast(response) {
         forecastHTML +
         ` <div class="weather-forecast">
         <div class="weather-today">${formatDay(day.time)}</div>
-        <div class="weather-icon"><img src="${day.condition.icon - url}"/></div>
-        <div class="max-temp"> ${day.temperature.maximum}</div>
-        <span class="min-temp">${day.temperature.minimum}</span>
+        <div class="weather-icon"><img src="${day.condition.icon_url}"/></div>
+        <div class="max-temp"> ${Math.round(day.temperature.maximum)}</div>
+        <span class="min-temp">${Math.round(day.temperature.minimum)}</span>
         </div>`;
     }
   });
+  let forecastEl = document.querySelector(".weather-forecast");
+  forecastEl.innerHTML = forecastHTML;
 }
+let submitSearch = document.querySelector(".search-button");
+submitSearch.addEventListener("click", Searching);
