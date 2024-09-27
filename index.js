@@ -53,3 +53,31 @@ function displayTemp(response) {
 }
 let submitSearch = document.querySelector(".search-button");
 submitSearch.addEventListener("click", Searching);
+
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[date.getDay()];
+}
+function getForecast(city) {
+  let apiKey = "cca34be40btf00a3b62f839750cc64eo";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  axios(apiUrl).then(displayForecast);
+}
+function displayForecast(response) {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = "";
+
+  response.data.daily.forEach(function (day, index) {
+    if (index < 5) {
+      forecastHTML =
+        forecastHTML +
+        ` <div class="weather-forecast">
+        <div class="weather-today">${formatDay(day.time)}</div>
+        <div class="weather-icon"><img src="${day.condition.icon - url}"/></div>
+        <div class="max-temp"> ${day.temperature.maximum}</div>
+        <span class="min-temp">${day.temperature.minimum}</span>
+        </div>`;
+    }
+  });
+}
