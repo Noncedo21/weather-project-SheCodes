@@ -124,9 +124,9 @@ body {
 }
 
 .weather-forecast-container {
-  display: grid; /* Use grid layout */
-  grid-template-columns: repeat(5, 1fr); /* Create 5 equal columns */
-  gap: 20px; /* Space between columns */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
   padding: 10px;
   position: relative;
   bottom: 200px;
@@ -134,12 +134,12 @@ body {
 
 .weather-forecast {
   display: flex;
-  flex-direction: column; /* Stack items vertically in each forecast */
-  align-items: center; /* Center align each item */
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
   background-color: #ffffff;
-  border-radius: 8px; /* Rounded corners for a neat look */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .weather-today {
@@ -148,8 +148,8 @@ body {
 }
 
 .weather-icon img {
-  width: 50px; /* Adjust icon size */
-  margin-bottom: 5px; /* Space between icon and temperature */
+  width: 50px;
+  margin-bottom: 5px;
 }
 
 .max-temp {
@@ -158,6 +158,6 @@ body {
 }
 .min-temp {
   font-size: 18px;
-  margin-bottom: 5px; /* Space between temperature elements */
+  margin-bottom: 5px;
   font-weight: lighter;
 }
